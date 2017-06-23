@@ -50,3 +50,6 @@ Here's what we're testing for:
 * Describe button clicking interactions
   * it should not win if one button is clicked
   * it should display 'clicked' for all buttons and say "You win!" 
+
+# Solution
+* [test/three-click-test-solution.js](test/three-click-test-solution.js)
