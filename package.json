@@ -1,0 +1,26 @@
+{
+  "name": "selenium-clicking-lab",
+  "version": "1.0.0",
+  "description": "People click on things on websites a lot. It's important to be able to click on things with Selenium. Let's practice that.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "path": "^0.12.7",
+    "selenium-webdriver": "^3.4.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.3.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.generalassemb.ly/CODA-curriculum/selenium-clicking-lab.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
