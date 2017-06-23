@@ -11,6 +11,7 @@ on the website itself. It only exists so we can interact with it via selenium.
 * Run `node index.js` to start the server
 * Navigate to http://localhost:3000 to see the simple webpage
 * Verify that you (as a human) can click the three buttons and see a win message
+* Run the initial failing tests by executing `mocha` in another Terminal tab
 
 # Writing Selenium Interactions
 A test file `test/three-click-test.js` has been provided for you. It combines
