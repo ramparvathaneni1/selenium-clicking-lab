@@ -13,6 +13,26 @@ on the website itself. It only exists so we can interact with it via selenium.
 * Verify that you (as a human) can click the three buttons and see a win message
 * Run the initial failing tests by executing `mocha` in another Terminal tab
 
+# Useful Code Snippets
+You can perform basic clicking by finding and element with `By.id()` (or another
+`By.` method) and calling `.click()`:
+
+```js
+driver.findElement(By.id('button1')).click();
+```
+
+Here's how to check text within an element. First, you have to get a reference
+to the element using something like `By.id()`. Then, use `.getText()` with a
+`.then(txt)` function where the `txt` parameter contains the actual value of
+text inside that element:
+
+```
+driver.findElement(By.id('button1')).getText().then(function(txt) {
+  assert.equal(txt, "clicked");
+});
+```
+
+
 # Writing Selenium Interactions
 A test file `test/three-click-test.js` has been provided for you. It combines
 **Mocha** and **Selenium** together to provide automatic browser interaction
