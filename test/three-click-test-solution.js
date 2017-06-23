@@ -7,14 +7,14 @@ var driver = new webdriver.Builder()
     .forBrowser('chrome')
     .build();
 
-describe("Three Button Game Site", function() {
+describe("(Solution) Three Button Game Site", function() {
   before(function(done) {
     // load the website once for all the tests
-    driver.get('http://localhost:8000').then(function() {
+    var port = 3000;
+    driver.get('http://localhost:' + port).then(function() {
       done();
     });
   });
-  
   
   after(function() {
     // shut down the Selenium web driver after all the tests.
