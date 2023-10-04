@@ -5,7 +5,7 @@ const main = () => {
   let driver = new selenium.Builder().forBrowser("chrome").build();
   driver.get("http://localhost:3000/");
 
-  describe("initial state 3 test", () => {
+  describe("Describe the initial state", () => {
     it("should have the top message say: Three Button Game.", async () => {
       const selection = await selenium.By.id("top-message");
       const text = await driver.findElement(selection).getText();
@@ -29,8 +29,8 @@ const main = () => {
     });
   });
 
-  describe("button clicking", () => {
-    it("button text should change when clicked", async () => {
+  describe("Describe button clicking interactions", () => {
+    it("should change text when clicked", async () => {
       const selection = await selenium.By.id("button1");
       const button = await driver.findElement(selection);
       button.click();
@@ -44,7 +44,7 @@ const main = () => {
       assert.equal(text, "Click those buttons!");
     });
 
-    it("should display 'clicked' for all buttons and 'You win!'", async () => {
+    it("should display 'clicked' for all buttons and say 'You win!'", async () => {
       let numClicked = 0;
       for (let i = 1; i <= 3; i++) {
         const selection = await selenium.By.id("button" + i);
@@ -59,6 +59,7 @@ const main = () => {
         const text = await driver.findElement(selection).getText();
         assert.equal(text, "You win!");
       }
+      driver.quit();
     });
   });
 };
