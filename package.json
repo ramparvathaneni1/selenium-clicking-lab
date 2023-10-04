@@ -4,7 +4,7 @@
   "description": "People click on things on websites a lot. It's important to be able to click on things with Selenium. Let's practice that.",
   "main": "index.js",
   "directories": {
-    "test": "test"
+    "test": "mocha test/three-click-test-solution.js --timeout 50000"
   },
   "dependencies": {
     "express": "^4.15.3",
