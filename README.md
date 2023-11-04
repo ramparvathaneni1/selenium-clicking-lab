@@ -14,6 +14,7 @@ on the website itself. It only exists so we can interact with it via selenium.
 - Navigate to http://localhost:3000 to see the simple webpage
 - Verify that you (as a human) can click the three buttons and see a win message
 - Run the initial failing tests by executing `npm run test` in another Terminal tab
+- You'll work in the `test/three-click-test.js` file.
 
 # Useful Code Snippets
 
@@ -48,7 +49,7 @@ In the Terminal, run `npm run test` to execute the suite of tests.
 Here's what we're testing for:
 
 - Describe the initial state
-  - it should have an header with an id say: "Three Button Game"
+  - it should have a header with an id say: "Three Button Game"
   - it should have the bottom message say: "Click those buttons!"
   - it should have each button say click me
 - Describe button clicking interactions
