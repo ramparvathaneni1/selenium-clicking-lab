@@ -59,4 +59,4 @@ Here's what we're testing for:
 
 # Solution
 
-- [test/three-click-test-solution.js](test/three-click-test-solution.js)
+- [test/three-click-test-solution.js](./test-solution/three-click-test-solution.js)
