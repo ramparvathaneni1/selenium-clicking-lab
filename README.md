@@ -29,7 +29,7 @@ await driver.findElement(selection).click();
 Here's how to check text within an element. First, you have to get a reference
 to the element using something like `selenium.By.id()`. Next, use `.getText()` to store the text for the element. Then, `assert.equal(text, "Click those buttons!")` function where the `text` parameter contains the actual value of text inside that element:
 
-```
+```js
 const selection = await selenium.By.id("winner");
 const text = await driver.findElement(selection).getText();
 assert.equal(text, "Click those buttons!");
