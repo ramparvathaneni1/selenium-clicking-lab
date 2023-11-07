@@ -16,7 +16,7 @@
     "selenium-webdriver": "^4.13.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --timeout 50000"
   },
   "repository": {
     "type": "git",
